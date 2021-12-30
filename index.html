@@ -73,23 +73,36 @@ copy this URL or one like it before taking picture-->
  </div>
 <div class="dataEntry">
 
-<label for="patientName">name as it appears, usually:first last </label>
-<input type="text" name="patientName" id="patientName" value="">
-<script>
-document.getElementById("patientName").addEventListener("keyup",
-myFunction);
-function myFunction(){
+ <label for="patientName">name as it appears, usually:first last </label>
+ <input type="text" name="patientName" id="patientName" value="">
+ <script>
+ document.getElementById("patientName").addEventListener("keyup",
+ myFunction);
+ function myFunction(){
     let elementValue= document.getElementById("patientName").value;
     document.getElementById("name").innerHTML=elementValue;
-}
-</script>
+ }
+ </script>
 
 
-<label for="date">like this " December 29, 2021 "</label>
-<input type="text" name="date" id="date">
+ <label for="date">like this " December 29, 2021 "</label>
+ <input type="text" name="date" id="date">
+ 
 
-<label for="nearestStore">type in address how it appears on walgreens.com</label>
-<input type="text" name="nearestStore" id="nearestStore">
+
+
+ <label for="nearestStore">type in address how it appears on walgreens.com</label>
+ <input type="text" name="nearestStore" id="nearestStore" value="100 E MINERAL, LITTLETON,CO ">
+
+ <script>
+    document.getElementsByClassName("address").addEventListener("keyup",myFunction);
+    function myFunction(){
+        let elementValue=document.getElementsByClassName("address").value;
+        document.getElementsByClassName("address").innerHTML=elementValue;
+    }
+        </script>
+    
+
 </div>
 <script>
 
