@@ -106,10 +106,10 @@ padding-right: 4px;
     padding: 8px;
     margin-left: -240px;
 }
-.hello, .name{
+.hello, #name{
     font-family: sans-serif;
 }
-.name{
+#name{
     font-weight: 700;
     
 }
